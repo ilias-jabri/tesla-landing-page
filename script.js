@@ -47,11 +47,14 @@ setTimeout(() => {
 makeAction();
 }
 start();
+window.onscroll = function myFunction() {
+    if (document.documentElement.scrollTop > 600) {
+      document.querySelector("#intro").style.opacity = "1";
+    }
+    if (document.documentElement.scrollTop > 900) {
+        document.querySelector("#second-section").style.opacity = "1";
+    } 
+    else {
 
-
-
-function scroll(element){
-    if (element.scrollTop > 50) {
-        alert('true bro')
     }
 }

@@ -42,6 +42,8 @@ img{
     width: calc(100%);
 }
 #intro, #second-section{
+    transition:0.5s;
+    opacity: 0;
     font-size: 1.7em;
     margin-bottom: 0px;
     padding-bottom: 0px;
@@ -50,6 +52,9 @@ img{
     margin-top: 100px;
     background-color: rgb(255, 255, 255);
     height: 500px;
+}
+#intro > *, #second-section> * {
+    transform: translate(0px, 80px);
 }
 #intro > div{
     display: inline-block;
