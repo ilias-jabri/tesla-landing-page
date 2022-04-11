@@ -8,21 +8,37 @@
     <title>landing page</title>
 </head>
 <body>
-    <header id="header">
+    <div style="position:absolute; display: block;" id="landscape">
+        <div id="action"></div>
+    </div>
+
+    <header style="display: none;" id="header">
         <nav id="nav-bar">
-            <a href="#" class="nav-link">models</a>
-            <a href="#" class="nav-link">customization</a>
-            <a href="#" class="nav-link">pricing</a>
+            <a href="#" class="nav-link">Models</a>
+            <a href="#" class="nav-link">Customization</a>
+            <a href="#" class="nav-link">Pricing</a>
         </nav>
     </header>
-    <h1>Tesla model s plaid</h1>
-    <div id="video-section"></div>
-    <form action="https://www.freecodecamp.com/email-submit" method="post">
-        <input placeholder="email.." type="email" name="email" id="email">
-        <input type="submit" value="submit" id="submit">
-    </form>
 
-
+    <main style="display: none;">
+        <h1 id="phrase">Tesla model S Plaid.</h1>
+        <section id="image-clip">
+            <img  src="./model-s-range.jpeg" alt="model s plaid">
+        </section>
+        <section id="intro">
+            <iframe width="1344" height="526" src="https://www.youtube.com/embed/tGiiSPPXM40" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        
+        <!--     
+            <div id="video-section"></div>
+            <form action="https://www.freecodecamp.com/email-submit" method="post">
+                <input placeholder="email.." type="email" name="email" id="email">
+                <input type="submit" value="submit" id="submit">
+            </form>
+        -->
+        
+    </main>
+        
     <script src="./script.js"></script>
 </body>
 </html>
