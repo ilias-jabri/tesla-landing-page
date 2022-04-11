@@ -33,42 +33,46 @@ body{
 }
 #image-clip{
     overflow: hidden;
-<<<<<<< HEAD
     height: auto;
-=======
-    height: 1000px;
-    min-width: 10%;
->>>>>>> 83c99ce34401b7fad2d5e38db6c1b1ce439802af
+    max-height: 1000px;
     padding: 0px;
 }
 img{
     margin: 0px;
     width: calc(100%);
 }
-#intro{
-<<<<<<< HEAD
-    font-size: 2.3em;
+#intro, #second-section{
+    font-size: 1.7em;
     margin-bottom: 0px;
+    padding-bottom: 0px;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 100px;
     background-color: rgb(255, 255, 255);
     height: 500px;
 }
+#intro > div{
+    display: inline-block;
+    height: 400px;
+    width: 400px;
+}
 #intro h1{
-    margin-bottom: 0px;
+    margin: 0px;
 }
 #intro p{
     margin-top: 30px;
 }
 #intro > iframe{
-    margin-right: 300px;
+    margin-right: 100px;
 }
-=======
-    background-color: rgb(255, 255, 255);
-    height: 500px;
+#intro ul{
+
+    font-size: 0.7em;
 }
->>>>>>> 83c99ce34401b7fad2d5e38db6c1b1ce439802af
+#second-section{
+    margin: 0;
+    background-color: rgb(242, 242, 242);
+}
 .square{
     transition: 200ms;
     top: 50%;
@@ -96,13 +100,10 @@ img{
     height: 100vh;
     background-color: black;
 }
-<<<<<<< HEAD
 iframe{
-    width: 600px;
+    width: 700px;
     height: 400px;
 }
-=======
->>>>>>> 83c99ce34401b7fad2d5e38db6c1b1ce439802af
 @media(min-width: 2000px){
     #image-clip{
         display: flex;
