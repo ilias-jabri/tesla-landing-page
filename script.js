@@ -39,6 +39,7 @@ setTimeout(() => {
     const landscape = document.querySelector('#landscape');
     landscape.style.opacity = '0';
     setTimeout(()=>landscape.style.display = 'none', 400)
+    setTimeout(()=>document.getElementById('png').style.transform = 'none', 0)
     //landscape.style.display = 'none';
     document.querySelector('#header').style.display = 'block';
     document.querySelector('main').style.display = 'block';
@@ -48,11 +49,13 @@ makeAction();
 }
 start();
 window.onscroll = function myFunction() {
-    if (document.documentElement.scrollTop > 600) {
+    if (document.documentElement.scrollTop > 300) {
       document.querySelector("#intro").style.opacity = "1";
+      document.querySelector("#intro").style.transform = "translate(0px,0px)"
     }
     if (document.documentElement.scrollTop > 900) {
         document.querySelector("#second-section").style.opacity = "1";
+        document.querySelector("#second-section").style.transform = "translate(0px,0px)"
     } 
     else {
 
