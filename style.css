@@ -33,7 +33,12 @@ body{
 }
 #image-clip{
     overflow: hidden;
+<<<<<<< HEAD
     height: auto;
+=======
+    height: 1000px;
+    min-width: 10%;
+>>>>>>> 83c99ce34401b7fad2d5e38db6c1b1ce439802af
     padding: 0px;
 }
 img{
@@ -41,6 +46,7 @@ img{
     width: calc(100%);
 }
 #intro{
+<<<<<<< HEAD
     font-size: 2.3em;
     margin-bottom: 0px;
     display: flex;
@@ -58,6 +64,11 @@ img{
 #intro > iframe{
     margin-right: 300px;
 }
+=======
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+}
+>>>>>>> 83c99ce34401b7fad2d5e38db6c1b1ce439802af
 .square{
     transition: 200ms;
     top: 50%;
@@ -85,10 +96,13 @@ img{
     height: 100vh;
     background-color: black;
 }
+<<<<<<< HEAD
 iframe{
     width: 600px;
     height: 400px;
 }
+=======
+>>>>>>> 83c99ce34401b7fad2d5e38db6c1b1ce439802af
 @media(min-width: 2000px){
     #image-clip{
         display: flex;
