@@ -1,5 +1,6 @@
 :root{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
 }
 body{
     display:flex;
@@ -32,8 +33,7 @@ body{
 }
 #image-clip{
     overflow: hidden;
-    height: 1000px;
-    min-width: 10%;
+    height: auto;
     padding: 0px;
 }
 img{
@@ -41,8 +41,22 @@ img{
     width: calc(100%);
 }
 #intro{
+    font-size: 2.3em;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
     background-color: rgb(255, 255, 255);
     height: 500px;
+}
+#intro h1{
+    margin-bottom: 0px;
+}
+#intro p{
+    margin-top: 30px;
+}
+#intro > iframe{
+    margin-right: 300px;
 }
 .square{
     transition: 200ms;
@@ -70,6 +84,10 @@ img{
     width: 100%;
     height: 100vh;
     background-color: black;
+}
+iframe{
+    width: 600px;
+    height: 400px;
 }
 @media(min-width: 2000px){
     #image-clip{

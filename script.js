@@ -43,9 +43,7 @@ setTimeout(() => {
     document.querySelector('#header').style.display = 'block';
     document.querySelector('main').style.display = 'block';
 
-
 }, 4500);
-
 makeAction();
 }
 start();
