@@ -47,3 +47,11 @@ setTimeout(() => {
 makeAction();
 }
 start();
+
+
+
+function scroll(element){
+    if (element.scrollTop > 50) {
+        alert('true bro')
+    }
+}
