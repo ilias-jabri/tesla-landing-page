@@ -32,16 +32,48 @@ body{
 }
 #image-clip{
     overflow: hidden;
-    height:100vh;
-    min-width: min-content;
-    background-color: red;
+    height: 1000px;
+    min-width: 10%;
+    padding: 0px;
 }
 img{
-    width: 100%;
+    margin: 0px;
+    width: calc(100%);
 }
-
-@media(max-width: 700px){
-    :root{
-        color: red;
+#intro{
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+}
+.square{
+    transition: 200ms;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    border: 3px solid rgb(255, 77, 0);
+    box-shadow: 0px 0px 15px rgb(255, 30, 0);
+}
+#action{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+#landscape{
+    top: 0%;
+    transition: 500ms;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+@media(min-width: 2000px){
+    #image-clip{
+        display: flex;
+        align-items: center;
     }
 }
