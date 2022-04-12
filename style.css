@@ -179,12 +179,13 @@ iframe{
 }
 #interior-section  #img-div > img{
     max-width: 800px;
-    flex: 0 1 500px;
+    min-width: 650px;
+    flex: 0 1 200px;
 }
 #interior-section #img-div > #text-container{
-    min-width: 430px;
-    max-width: 1000px;
-    flex: 1 1 100px;
+    min-width: 300px;
+    max-width: 500px;
+    flex: 1 1 400px;
     background-color: rgba(255, 0, 0, 0);
 }
 #interior-section #img-div{
