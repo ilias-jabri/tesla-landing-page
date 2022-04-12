@@ -63,8 +63,8 @@ window.onscroll = function myFunction() {
       document.querySelector("#intro").style.transform = "translate(0px,0px)"
     }
     if (document.documentElement.scrollTop > 900) {
-        document.querySelector("#second-section").style.opacity = "1";
-        document.querySelector("#second-section").style.transform = "translate(0px,0px)"
+        document.querySelector("#interior-section").style.opacity = "1";
+        document.querySelector("#interior-section").style.transform = "translate(0px,0px)"
     } 
     else {
 
