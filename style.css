@@ -1,6 +1,7 @@
 :root{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
+    scroll-behavior: smooth;
 }
 body{
     display:flex;
@@ -169,17 +170,20 @@ iframe{
 #second-section{
     flex-direction: column;
     gap: 100px;
+    padding-top: 50px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 #second-section  #img-div > img{
     max-width: 800px;
+    flex: 0 1 500px;
 }
 #second-section #img-div{
     max-width: 90%;
     color: rgb(0, 0, 0);
     display: flex;
+    flex-wrap: wrap;
     gap: 100px;
 }
 @media(min-width: 2000px){
