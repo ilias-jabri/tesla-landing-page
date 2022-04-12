@@ -13,6 +13,14 @@ body{
     transform: translate(-400px);
     position: absolute;
 }
+#logo-container{
+    padding-left: 10px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 25px;
+}
 #discover-btn{
     display: inline-block;
     position: absolute;
@@ -33,6 +41,8 @@ body{
     cursor: pointer;
 }
 #header{
+    display: flex;
+    justify-content: center;
     z-index: 10;
     position: fixed;
     background-color: rgb(0, 0, 0);
@@ -168,7 +178,7 @@ iframe{
 }
 #second-section #img-div{
     max-width: 90%;
-    color: red;
+    color: rgb(0, 0, 0);
     display: flex;
     gap: 100px;
 }
