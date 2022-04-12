@@ -111,7 +111,7 @@ img{
     padding-top: 100px;
     background-color: rgb(255, 255, 255);
     height: auto;
-    transform: translate(0px, 80px);
+    transform: translate(0px, 120px);
 }
 #interior-section > #text-container{
     color: red;
@@ -204,8 +204,13 @@ iframe{
     flex-wrap: wrap;
     gap: 100px;
 }
+#speed-section{
+    height: 500px;
+}
 #speed-scene{
-    width: 500px;
+    position: relative;
+    transition: 2s ease-out;
+    width: 0px;
     overflow: hidden;
 }
 

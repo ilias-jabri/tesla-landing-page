@@ -60,17 +60,23 @@ start();
 window.onscroll = function myFunction() {
     if (document.documentElement.scrollTop > 300) {
       document.querySelector("#intro").style.opacity = "1";
-      document.querySelector("#intro").style.transform = "translate(0px,0px)"
+      document.querySelector("#intro").style.transform = "translate(0px,0px)";
     }
     if (document.documentElement.scrollTop > 900) {
         document.querySelector("#interior-section").style.opacity = "1";
-        document.querySelector("#interior-section").style.transform = "translate(0px,0px)"
+        document.querySelector("#interior-section").style.transform = "translate(0px,0px)";
     }
-    if (document.documentElement.scrollTop > 1000) {
+    if (document.documentElement.scrollTop > 1900) {
         document.querySelector("#speed-section").style.opacity = "1";
-        document.querySelector("##speed-section").style.transform = "translate(0px,0px)"
+        document.querySelector("#speed-section").style.transform = "translate(0px,0px)";
+        document.querySelector('#speed-scene').style.width = '600px';
     } 
     else {
 
     }
+}
+const speedSection = document.getElementById('speed-section');
+speedSection.onscroll = function(){
+    alert('its working');
+    console.log('working');
 }
