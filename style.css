@@ -98,7 +98,7 @@ img{
     margin: 0px;
     width: calc(100%);
 }
-#intro, #interior-section{
+#intro, #interior-section, #speed-section{
     transition:0.5s;
     opacity: 0;
     font-size: 1.7em;
@@ -112,6 +112,9 @@ img{
     background-color: rgb(255, 255, 255);
     height: auto;
     transform: translate(0px, 80px);
+}
+#interior-section > #text-container{
+    color: red;
 }
 #intro > div{
     display: block;
@@ -169,8 +172,9 @@ iframe{
     height: 400px;
 }
 #interior-section{
+    font-size: 1.5em;
     flex-direction: column;
-    gap: 100px;
+    gap: 80px;
     padding-top: 50px;
     flex-wrap: wrap;
     align-items: center;
@@ -185,8 +189,12 @@ iframe{
 #interior-section #img-div > #text-container{
     min-width: 300px;
     max-width: 500px;
-    flex: 1 1 400px;
+    flex: 1 2 400px;
     background-color: rgba(255, 0, 0, 0);
+}
+#interior-section #img-div > #text-container > p{
+    font-size: 0.8em;
+    color: rgb(73, 73, 73);
 }
 #interior-section #img-div{
     max-width: 90%;
@@ -196,6 +204,25 @@ iframe{
     flex-wrap: wrap;
     gap: 100px;
 }
+#speed-scene{
+    width: 500px;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media(min-width: 2000px){
     #image-clip{
         display: flex;

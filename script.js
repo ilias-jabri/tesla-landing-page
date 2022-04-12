@@ -65,6 +65,10 @@ window.onscroll = function myFunction() {
     if (document.documentElement.scrollTop > 900) {
         document.querySelector("#interior-section").style.opacity = "1";
         document.querySelector("#interior-section").style.transform = "translate(0px,0px)"
+    }
+    if (document.documentElement.scrollTop > 1000) {
+        document.querySelector("#speed-section").style.opacity = "1";
+        document.querySelector("##speed-section").style.transform = "translate(0px,0px)"
     } 
     else {
 
