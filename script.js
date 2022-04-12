@@ -39,7 +39,16 @@ setTimeout(() => {
     const landscape = document.querySelector('#landscape');
     landscape.style.opacity = '0';
     setTimeout(()=>landscape.style.display = 'none', 400)
-    setTimeout(()=>document.getElementById('png').style.transform = 'none', 0)
+    setTimeout(()=>document.getElementById('png').style.transform = 'translate(0px)', 0)
+    setTimeout(()=>{
+        const elements = document.querySelectorAll('#specs h1');
+        let len = elements.length;
+        for(let i = 0; i < len; i++){
+            setTimeout(() => {
+                elements[i].style = 'transition: 0.5s;opacity: 1;transform: translate(0px,0px)';
+            }, i*300);
+        }
+    }, 400)
     //landscape.style.display = 'none';
     document.querySelector('#header').style.display = 'block';
     document.querySelector('main').style.display = 'block';

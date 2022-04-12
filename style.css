@@ -13,6 +13,25 @@ body{
     transform: translate(-400px);
     position: absolute;
 }
+#discover-btn{
+    display: inline-block;
+    position: absolute;
+    border: 1px solid white;
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    bottom: 7%;
+    left: calc(50% - 50px);
+    border-radius: 20px;
+    color: white; 
+    font-size: 0.9em;
+    background-color: transparent;
+}
+#discover-btn:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
 #header{
     z-index: 10;
     position: fixed;
@@ -38,15 +57,24 @@ body{
     left: 5%;
     font-size: 3.5em;
 }
+#phrase > span{
+    color: white;
+}
 #specs{
     position: absolute;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 100px;
     width: 100%;
     bottom: 10%;
     font-size: 1.5em;
     font-weight: 100;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+#specs h1{
+    transition: 0.5s;
+    opacity: 0;
+    transform: translate(0px,100px);
 }
 #image-clip{
     position: relative;
@@ -64,16 +92,18 @@ img{
     opacity: 0;
     font-size: 1.7em;
     margin-bottom: 0px;
-    padding-bottom: 0px;
+    padding-bottom: 50px;
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding-top: 100px;
     background-color: rgb(255, 255, 255);
-    height: 500px;
+    height: auto;
     transform: translate(0px, 80px);
 }
 #intro > div{
-    display: inline-block;
+    display: block;
     height: 400px;
     width: 400px;
 }
@@ -84,7 +114,8 @@ img{
     margin-top: 30px;
 }
 #intro > iframe{
-    margin-right: 100px;
+    max-width: 80%;
+    margin-bottom: 100px;
 }
 #intro ul{
 
@@ -124,6 +155,22 @@ img{
 iframe{
     width: 700px;
     height: 400px;
+}
+#second-section{
+    flex-direction: column;
+    gap: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#second-section  #img-div > img{
+    max-width: 800px;
+}
+#second-section #img-div{
+    max-width: 90%;
+    color: red;
+    display: flex;
+    gap: 100px;
 }
 @media(min-width: 2000px){
     #image-clip{
