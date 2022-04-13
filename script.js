@@ -62,14 +62,16 @@ window.onscroll = function myFunction() {
       document.querySelector("#intro").style.opacity = "1";
       document.querySelector("#intro").style.transform = "translate(0px,0px)";
     }
-    if (document.documentElement.scrollTop > 900) {
+    if (document.documentElement.scrollTop > 800) {
         document.querySelector("#interior-section").style.opacity = "1";
         document.querySelector("#interior-section").style.transform = "translate(0px,0px)";
     }
-    if (document.documentElement.scrollTop > 1900) {
-        document.querySelector("#speed-section").style.opacity = "1";
-        document.querySelector("#speed-section").style.transform = "translate(0px,0px)";
-        document.querySelector('#speed-scene').style.width = '600px';
+    if (document.documentElement.scrollTop > 1700) {
+        const speedSection = document.querySelector("#speed-section");
+        const speedScene = document.querySelector('#speed-scene');
+        speedSection.style.opacity = "1";
+        speedSection.style.transform = "translate(0px,0px)";
+        speedScene.style.width = '600px';
     } 
     if (document.documentElement.scrollTop > 2000) {
         document.querySelector('#speed-specs').style.opacity = '1';
