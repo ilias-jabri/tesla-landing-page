@@ -71,6 +71,9 @@ window.onscroll = function myFunction() {
         document.querySelector("#speed-section").style.transform = "translate(0px,0px)";
         document.querySelector('#speed-scene').style.width = '600px';
     } 
+    if (document.documentElement.scrollTop > 2000) {
+        document.querySelector('#speed-specs').style.opacity = '1';
+    }
     else {
 
     }

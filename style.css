@@ -15,12 +15,12 @@ body{
     position: absolute;
 }
 #logo-container{
-    padding-left: 10px;
+    padding-left:30px;
     position: absolute;
     display: flex;
     align-items: center;
     height: 100%;
-    width: 25px;
+    width: 120px;
 }
 #discover-btn{
     display: inline-block;
@@ -98,7 +98,7 @@ img{
     margin: 0px;
     width: calc(100%);
 }
-#intro, #interior-section, #speed-section{
+.section{
     transition:0.5s;
     opacity: 0;
     font-size: 1.7em;
@@ -208,10 +208,18 @@ iframe{
     height: 500px;
 }
 #speed-scene{
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
     position: relative;
     transition: 2s ease-out;
     width: 0px;
     overflow: hidden;
+}
+#speed-specs{
+    font-size: 0.8em;
+    line-height: 25px;
 }
 
 
