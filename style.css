@@ -48,7 +48,7 @@ body{
     position: fixed;
     background-color: rgb(0, 0, 0);
     top: 0px;
-    width: 100%;
+    width: 100vw;
     height: 40px;
 }
 #nav-bar{
@@ -113,6 +113,7 @@ img{
     width: 100%;
     background-color: rgb(255, 255, 255);
     height: auto;
+    min-height: 500px;
     transform: translate(0px, 120px);
 }
 #interior-section > #text-container{
@@ -214,14 +215,16 @@ iframe{
     height: 500px;
 }
 #speed-scene{
-    height: auto;
     background-color: transparent;
     display: flex;
     align-items: center;
     position: relative;
     transition: 2s ease-out;
     width: 0px;
+    height: auto;
     overflow: hidden;
+}
+#speed-scene > img{
 }
 #speed-specs{
     font-size: 0.8em;
