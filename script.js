@@ -91,7 +91,7 @@ speedSection.onscroll = function(){
 
 let showCaseClickTracker = 0;
 function showCaseClickButton(increment){
-    let imgs = 4;
+    let imgs = 5;
     showCaseClickTracker += increment;
     if(showCaseClickTracker < 0) {
         showCaseClickTracker = 0;

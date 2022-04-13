@@ -229,15 +229,24 @@ iframe{
     background-color: rgb(202, 202, 202);
 }
 #imgs-views{
-    height: 500px;
+    height: 400px;
     overflow: hidden;
     background-color: red;
     justify-content: center;
+    align-items: center;
 }
 #imgs-views > *{
     display: none;
+    width:500px;
 }
-
+.defualt-btn{
+    height: 40px;
+    min-width: 100px;
+    border: 2px solid black;
+    background-color: transparent;
+    color: black;
+    border-radius: 50px;
+}
 
 
 
