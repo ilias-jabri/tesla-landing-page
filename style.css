@@ -225,27 +225,38 @@ iframe{
     font-size: 0.8em;
     line-height: 25px;
 }
+#show-case-section > #container{
+    position: relative;
+    min-width: 600px;
+    max-width: 1000px;
+}
 #show-case-section{
-    background-color: rgb(202, 202, 202);
+    height: auto;
+    padding:0%;
+    
+    background-color: rgb(222, 222, 222);
 }
 #imgs-views{
-    height: 400px;
     overflow: hidden;
-    background-color: red;
     justify-content: center;
     align-items: center;
 }
 #imgs-views > *{
+    transition: 1s;
     display: none;
-    width:500px;
+    width:100%;
 }
 .defualt-btn{
+    left: 8%;
+    top: calc(70% - 20px);
+    position: absolute;
     height: 40px;
     min-width: 100px;
-    border: 2px solid black;
+    border: 1px solid black;
     background-color: transparent;
     color: black;
     border-radius: 50px;
+    background-color:white;
 }
 
 
