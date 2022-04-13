@@ -211,8 +211,7 @@ iframe{
     font-size: 0.8em;
     color: rgb(73, 73, 73);
 }
-#speed-section{
-    height: 500px;
+#text-container{
 }
 #speed-scene{
     background-color: transparent;
@@ -223,8 +222,6 @@ iframe{
     width: 0px;
     height: auto;
     overflow: hidden;
-}
-#speed-scene > img{
 }
 #speed-specs{
     font-size: 0.8em;
