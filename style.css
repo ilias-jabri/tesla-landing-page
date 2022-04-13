@@ -211,8 +211,6 @@ iframe{
     font-size: 0.8em;
     color: rgb(73, 73, 73);
 }
-#text-container{
-}
 #speed-scene{
     background-color: transparent;
     display: flex;
@@ -227,9 +225,18 @@ iframe{
     font-size: 0.8em;
     line-height: 25px;
 }
-
-
-
+#show-case-section{
+    background-color: rgb(202, 202, 202);
+}
+#imgs-views{
+    height: 500px;
+    overflow: hidden;
+    background-color: red;
+    justify-content: center;
+}
+#imgs-views > *{
+    display: none;
+}
 
 
 

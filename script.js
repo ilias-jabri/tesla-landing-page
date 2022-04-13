@@ -76,6 +76,9 @@ window.onscroll = function myFunction() {
     if (document.documentElement.scrollTop > 2000) {
         document.querySelector('#speed-specs').style.opacity = '1';
     }
+    if (document.documentElement.scrollTop > 2500) {
+        document.querySelector('#show-case-section').style.opacity = '1';
+    }
     else {
 
     }
@@ -84,4 +87,23 @@ const speedSection = document.getElementById('speed-section');
 speedSection.onscroll = function(){
     alert('its working');
     console.log('working');
+}
+
+let showCaseClickTracker = 0;
+function showCaseClickButton(increment){
+    let imgs = 4;
+    showCaseClickTracker += increment;
+    if(showCaseClickTracker < 0) {
+        showCaseClickTracker = 0;
+        console.log('faaalse');
+        return
+    };
+    if (showCaseClickTracker >= imgs) {
+        showCaseClickTracker = imgs-1
+        console.log('faaalse');
+        return
+    }
+    const gallery = document.querySelectorAll('#imgs-views > *');
+    gallery.forEach( img => { img.style.display = 'none'; });
+    gallery[showCaseClickTracker].style.display = 'inline-block';
 }
