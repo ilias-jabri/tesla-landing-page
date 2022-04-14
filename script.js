@@ -59,30 +59,25 @@ makeAction();
 start();
 window.onscroll = function myFunction() {
     if (document.documentElement.scrollTop > 300) {
-      document.querySelector("#intro").style.opacity = "1";
-      document.querySelector("#intro").style.transform = "translate(0px,0px)";
+      document.querySelector("#intro").className = 'visible-section';
     }
     if (document.documentElement.scrollTop > 800) {
-        document.querySelector("#interior-section").style.opacity = "1";
-        document.querySelector("#interior-section").style.transform = "translate(0px,0px)";
+        document.querySelector("#interior-section").className = 'visible-section';
     }
     if (document.documentElement.scrollTop > 1700) {
-        const speedSection = document.querySelector("#speed-section");
+        document.querySelector("#speed-section").className = 'visible-section';
         const speedScene = document.querySelector('#speed-scene');
-        speedSection.style.opacity = "1";
-        speedSection.style.transform = "translate(0px,0px)";
         speedScene.style.width = '600px';
     } 
     if (document.documentElement.scrollTop > 2000) {
         document.querySelector('#speed-specs').style.opacity = '1';
     }
     if (document.documentElement.scrollTop > 2500) {
-        document.querySelector('#show-case-section').style.opacity = '1';
-        document.querySelector('#show-case-section').style.transform = "translate(0px,0px)";
+        document.querySelector('#show-case-section').className = 'visible-section';
     }
     if (document.documentElement.scrollTop > 3000) {
-        document.querySelector('#order-section').style.opacity = '1';
-        document.querySelector('#order-section').style.transform = "translate(0px,0px)";
+        document.querySelector('#order-section').className = 'visible-section';
+        document.querySelector('#order-section').className = 'visible-section';
     }
     else {
 
