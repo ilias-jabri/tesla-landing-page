@@ -8,7 +8,6 @@ body{
     justify-content: center;
     flex-direction: column;
     margin: 0px;
-    padding-bottom: 100px;
 }
 #png{
     transition: 0.5s;
@@ -17,9 +16,11 @@ body{
 }
 #logo-container{
     padding-left:30px;
+    padding-top: 2px;
     position: absolute;
     display: flex;
     align-items: center;
+    justify-content:center;
     height: 100%;
     width: 120px;
 }
@@ -99,7 +100,7 @@ img{
     margin: 0px;
     width: calc(100%);
 }
-.section{
+.invisible-section{
     transition:0.5s;
     opacity: 0;
     font-size: 1.7em;
@@ -229,9 +230,9 @@ iframe{
     padding-top: 0px;
 }
 #interior-section  #wrapper > img{
-    max-width: 100%;
-    width: 600px;
-    min-width: 350px;
+    max-width: 900px;
+    min-width: 400px;
+    flex: 2 1 400px;
 }
 #interior-section #wrapper > #text-container{
     min-width: 300px;
@@ -267,12 +268,9 @@ iframe{
     max-width: 1000px;
 }
 #show-case-section{
+    padding-bottom: 0px;
+    position: relative;
     gap: 10px;
-    align-items: center;
-    height: 500px;
-    padding-top: 0px;
-    box-shadow: 0px -20px 30px rgba(0,0,0,0.1);
-    padding-bottom: 100px;
 }
 #show-case-section > * {
     max-width: 85%;
@@ -297,7 +295,7 @@ iframe{
     height: 37px;
     padding-left: 5px;
     width: 37px;
-    border:none;
+    border: none;
     border-radius: 50px;
     background-color: transparent;
     color: black;
@@ -313,9 +311,9 @@ iframe{
     left: 10px;
 }
 #order-section{
-    height: 100px;
-    transform: translate(0, 0);
-    background-color: red;
+    padding: 0;
+    position: relative;
+    transform: translate(0, 0); 
     box-shadow: 0px -30px 50px rgba(0, 0, 0, 0.203);
 }
 @media(min-width: 2000px){
@@ -348,7 +346,7 @@ iframe{
     #interior-section > #wrapper{
         gap:0px;
     }
-    .section{
+    .invisible-section{
         padding-bottom: 60px;
     }
     #speed-section > #text-container {
