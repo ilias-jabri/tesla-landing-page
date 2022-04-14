@@ -102,14 +102,14 @@ img{
     transition:0.5s;
     opacity: 0;
     font-size: 1.7em;
-    margin-bottom: 0px;
+    margin: 0px;
+    padding-top: 100px;
     padding-bottom: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 100px;
-    padding-top: 100px;
     width: 100%;
     background-color: rgb(255, 255, 255);
     height: auto;
@@ -211,6 +211,10 @@ iframe{
     font-size: 0.8em;
     color: rgb(73, 73, 73);
 }
+#speed-section{
+    background-color: rgb(41, 45, 48);
+    color:white;
+}
 #speed-scene{
     background-color: transparent;
     display: flex;
@@ -231,10 +235,12 @@ iframe{
     max-width: 1000px;
 }
 #show-case-section{
-    box-shadow: 0px -20px 30px rgba(0,0,0,0.2);
-    height: auto;
+    gap: 10px;
+    align-items: center;
+    height: 500px;
+    padding-top: 0px;
+    box-shadow: 0px -20px 30px rgba(0,0,0,0.1);
     padding:0%;
-    background-color: rgb(255, 255, 255);
 }
 #imgs-views{
     overflow: hidden;
@@ -247,16 +253,30 @@ iframe{
     width:100%;
 }
 .defualt-btn{
-    left: 8%;
+    position: relative;
+    left: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: calc(70% - 20px);
     position: absolute;
-    height: 40px;
-    min-width: 100px;
+    height: 37px;
+    padding-left: 5px;
+    width: 37px;
     border: 1px solid black;
     background-color: transparent;
     color: black;
     border-radius: 50px;
     background-color:white;
+}
+.defualt-btn:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+#previous-btn > span{
+    position: absolute;
+    left: 10px;
 }
 
 

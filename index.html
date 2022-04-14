@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -72,15 +74,29 @@
             </div>
         </section>
         <section id="show-case-section" class="section">
+            <div>
+                <h1 style="margin-bottom: 10px;">See the car.</h1>
+                <h5 style="color: gray;margin-top: 0px;">Beauty on wheels</h5>
+            </div>
             <div id="container">
-                <button class="defualt-btn" onclick="showCaseClickButton(-1)" id="previous-btn">previous</button>
+                <button class="defualt-btn" onclick="showCaseClickButton(-1)" id="previous-btn">
+                    <span class="material-icons">
+                        arrow_back_ios
+                        </span>
+                </button>
                 <div id="imgs-views">
                     <img style="display: inline-block;" src="./white-plaid/white tesla 1.jpg">
                     <img src="./white-plaid/white tesla 2.jpg">
                     <img src="./white-plaid/white tesla 3.jpg">
                     <img src="./white-plaid/white tesla 4.jpg">
+                    <img src="./white-plaid/white tesla 5.jpg">
+                    <img src="./white-plaid/white tesla 6.jpg">
                 </div>
-                <button style="left: auto; right: 8%;" class="defualt-btn" onclick="showCaseClickButton(1)" id="next-btn">next</button>
+                <button style="left: auto; right: 15%;" class="defualt-btn" onclick="showCaseClickButton(1)" id="next-btn">
+                    <span class="material-icons">
+                        arrow_forward_ios
+                        </span>
+                </button>
             </div>
         </section>
         <!--     

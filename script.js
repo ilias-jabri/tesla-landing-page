@@ -78,6 +78,7 @@ window.onscroll = function myFunction() {
     }
     if (document.documentElement.scrollTop > 2500) {
         document.querySelector('#show-case-section').style.opacity = '1';
+        document.querySelector('#show-case-section').style.transform = "translate(0px,0px)";
     }
     else {
 
@@ -91,7 +92,7 @@ speedSection.onscroll = function(){
 
 let showCaseClickTracker = 0;
 function showCaseClickButton(increment){
-    let imgs = 4;
+    let imgs = 6;
     showCaseClickTracker += increment;
     if(showCaseClickTracker < 0) {
         showCaseClickTracker = 0;
