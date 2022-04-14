@@ -80,6 +80,10 @@ window.onscroll = function myFunction() {
         document.querySelector('#show-case-section').style.opacity = '1';
         document.querySelector('#show-case-section').style.transform = "translate(0px,0px)";
     }
+    if (document.documentElement.scrollTop > 3000) {
+        document.querySelector('#order-section').style.opacity = '1';
+        document.querySelector('#order-section').style.transform = "translate(0px,0px)";
+    }
     else {
 
     }
