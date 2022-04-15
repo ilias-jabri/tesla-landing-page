@@ -107,3 +107,17 @@ function showCaseClickButton(increment){
     gallery.forEach( img => { img.style.display = 'none'; });
     gallery[showCaseClickTracker].style.display = 'inline-block';
 }
+function pickCarColors(){
+    const colors = document.querySelectorAll('.car-color');
+    const imgs = document.querySelectorAll('#the-car > *');
+    colors.forEach(color =>{
+        color.onclick = function(){
+            const hue = color.classList.value.replace('car-color ','');
+            imgs.forEach(img =>{
+                img.style.display = 'none';
+            });
+            document.querySelector(`img[src="./assets/${hue} option.png"]`).style.display = 'inline-block';
+        }
+    })
+}
+pickCarColors();

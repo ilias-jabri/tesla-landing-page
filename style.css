@@ -318,7 +318,6 @@ iframe{
 }
 #the-car{
     overflow: hidden;
-    border: 2px solid black;
     height: 200px;
     max-width: 600px;
 }
@@ -336,6 +335,7 @@ iframe{
     padding: 40px 10px;
     background-color: rgb(228, 228, 228);
     border-radius: 10px;
+    min-width: 350px;
 }
 #order-section #wrapper{
     display: flex;
@@ -348,7 +348,7 @@ iframe{
 .order-section-btns{
     background-color: rgb(207, 207, 207);
     padding: 10px;
-    border: 0px solid black;
+    border: none;
     border-radius: 20px;
     font-weight: 800;
     width: 90px;
@@ -374,6 +374,10 @@ iframe{
     height: 40px;
     background-color: rgb(255, 0, 0);
     border-radius: 50%;
+}
+.car-color:hover{
+    cursor:pointer;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.315);
 }
 .red{
     background-color: red;
