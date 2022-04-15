@@ -379,6 +379,13 @@ iframe{
     cursor:pointer;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.315);
 }
+.black{
+    background-color: black;
+}
+.white{
+    background-color: white;
+    border: 1px solid black;
+}
 .red{
     background-color: red;
 }
@@ -391,6 +398,7 @@ iframe{
 .blue{
     background-color: blue;
 }
+
 
 
 
