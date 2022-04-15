@@ -104,7 +104,7 @@
                 <div id="the-car">
                     <img src="./assets/black tesla interior.png">
                     <img src="./assets/white tesla interior.png">
-                    <img style="display: inline-block" src="./assets/black option.png">
+                    <img style="opacity: 1;display: inline-block" src="./assets/black option.png">
                     <img src="./assets/white option.png">
                     <img src="./assets/red option.png">
                     <img src="./assets/green option.png">
@@ -118,12 +118,12 @@
                         <div>
                             <p>interior: </p> <span class="chosen-color" id="chosen-interior-color"></span>
                         </div>
-                        <div>
+                        <div style="display: none;" id="autoPilot-option">
                             <p>AutoPilot</p>
                         </div>
                 </div>
             </div>
-            <div id="container-config-order"></div>
+            <div id="container-config-order">
             <div id="config">
                     <h1>colors</h1>
                     <div id="colors">
@@ -148,16 +148,17 @@
                     <div id="black-interior" class="car-color black"></div>
                     <div id="white-interior" class="car-color white"></div>
                 </div>
+                </div>
+                <div id="order-info">
+                    <form action="https://www.freecodecamp.com/email-submit" method="post">
+                        <input placeholder="email.." type="email" name="email" id="email">
+                        <input type="submit" value="Order" id="submit">
+                    </form>
+                    <p style="font-size: 0.4em;">our team will contact you soon for order confirmation.</p>
+                </div>
             </div>
+
         </section>
-        <!--     
-            <div id="video-section"></div>
-            <form action="https://www.freecodecamp.com/email-submit" method="post">
-                <input placeholder="email.." type="email" name="email" id="email">
-                <input type="submit" value="submit" id="submit">
-            </form>
-        -->
-        
     </main>
         
     <script src="./script.js"></script>

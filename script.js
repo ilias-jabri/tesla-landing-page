@@ -130,10 +130,41 @@ function pickInteriorColor(){
         imgs.forEach(img =>{
             img.style.display = 'none';
         });
-        document.querySelector(`img[src="./assets/${hue} tesla interior.png"]`).style.display = 'inline-block';
+        const theImg = document.querySelector(`img[src="./assets/${hue} tesla interior.png"]`);
+        theImg.style = 'display: inline-block;';
         document.getElementById('chosen-interior-color').style.backgroundColor = hue;
     }
     })
 }
+function autoPilot(){
+    const btns = document.querySelectorAll('.order-section-btns');
+    const autoPilot = document.getElementById('autoPilot-option');
+    const autoPilotPara = document.querySelector('#autoPilot-option > p');
+
+    btns.forEach(btn =>{
+        if (btn.innerText == 'Add') {
+            btn.onclick = function(){
+                autoPilot.style.display = 'flex';
+            }
+        }
+        if (btn.innerText == 'Discard') {
+            btn.onclick = function(){
+                autoPilot.style.display = 'none';
+            }
+        }
+    })
+    autoPilot.onmouseover = function(){
+        autoPilotPara.innerText = ' X ';
+        autoPilot.style.cursor = 'pointer';
+    }
+    autoPilot.onmouseleave = function(){
+        autoPilotPara.innerText = 'AutoPilot';
+        autoPilot.style.cursor = 'none';
+    }
+    autoPilot.onclick = function(){
+        autoPilot.style.display = 'none';
+    }
+}
+autoPilot();
 pickCarColors();
 pickInteriorColor();
