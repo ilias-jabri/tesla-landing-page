@@ -316,6 +316,80 @@ iframe{
     transform: translate(0, 0); 
     box-shadow: 0px -30px 50px rgba(0, 0, 0, 0.203);
 }
+#the-car{
+    overflow: hidden;
+    border: 2px solid black;
+    height: 200px;
+    max-width: 600px;
+}
+#the-car > img{
+    display: none;
+}
+#order-section #config{
+    font-size: 0.7em;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 40px 10px;
+    background-color: rgb(228, 228, 228);
+    border-radius: 10px;
+}
+#order-section #wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#order-section #config > *{
+    margin: 0;
+}
+.order-section-btns{
+    background-color: rgb(207, 207, 207);
+    padding: 10px;
+    border: 0px solid black;
+    border-radius: 20px;
+    font-weight: 800;
+    width: 90px;
+}
+.order-section-btns:hover{
+    background-color: black;
+    cursor: pointer;
+    color: white;
+}
+.Add{
+    background-color: rgb(0, 145, 255);
+}
+#order-section #colors{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    gap: 10px;
+}
+.car-color{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+.orange{
+    background-color: orange;
+}
+.blue{
+    background-color: blue;
+}
+
+
+
 @media(min-width: 2000px){
     #image-clip{
         display: flex;
