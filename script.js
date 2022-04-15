@@ -117,6 +117,7 @@ function pickCarColors(){
                 img.style.display = 'none';
             });
             document.querySelector(`img[src="./assets/${hue} option.png"]`).style.display = 'inline-block';
+            document.getElementById('chosen-car-color').style.backgroundColor = hue;
         }
     })
 }
