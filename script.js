@@ -125,12 +125,14 @@ function pickInteriorColor(){
     const colors = document.querySelectorAll('#interior .car-color');
     const imgs = document.querySelectorAll('#the-car > *');
     colors.forEach(color =>{
+        color.onclick = function(){
         const hue = color.classList.value.replace('car-color ','');
         imgs.forEach(img =>{
             img.style.display = 'none';
         });
-        document.querySelector(`img[src="./assets/${hue} tesla interior.jpg"]`).style.display = 'inline-block';
+        document.querySelector(`img[src="./assets/${hue} tesla interior.png"]`).style.display = 'inline-block';
         document.getElementById('chosen-interior-color').style.backgroundColor = hue;
+    }
     })
 }
 pickCarColors();
