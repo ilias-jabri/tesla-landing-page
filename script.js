@@ -108,7 +108,7 @@ function showCaseClickButton(increment){
     gallery[showCaseClickTracker].style.display = 'inline-block';
 }
 function pickCarColors(){
-    const colors = document.querySelectorAll('.car-color');
+    const colors = document.querySelectorAll('#colors .car-color');
     const imgs = document.querySelectorAll('#the-car > *');
     colors.forEach(color =>{
         color.onclick = function(){
@@ -121,4 +121,17 @@ function pickCarColors(){
         }
     })
 }
+function pickInteriorColor(){
+    const colors = document.querySelectorAll('#interior .car-color');
+    const imgs = document.querySelectorAll('#the-car > *');
+    colors.forEach(color =>{
+        const hue = color.classList.value.replace('car-color ','');
+        imgs.forEach(img =>{
+            img.style.display = 'none';
+        });
+        document.querySelector(`img[src="./assets/${hue} tesla interior.jpg"]`).style.display = 'inline-block';
+        document.getElementById('chosen-interior-color').style.backgroundColor = hue;
+    })
+}
 pickCarColors();
+pickInteriorColor();

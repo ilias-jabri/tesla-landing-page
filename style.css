@@ -403,12 +403,13 @@ iframe{
 .Add{
     background-color: rgb(0, 145, 255);
 }
-#order-section #colors{
+#order-section #colors, #interior{
+    margin-top: 0px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 60px;
     gap: 10px;
 }
 .car-color{
@@ -429,16 +430,16 @@ iframe{
     border: 1px solid black;
 }
 .red{
-    background-color: red;
+    background: linear-gradient(red , black);
 }
 .green{
-    background-color: green;
+    background: linear-gradient(rgb(51, 198, 51) , black);
 }
 .orange{
-    background-color: orange;
+    background: linear-gradient(orange , black);
 }
 .blue{
-    background-color: blue;
+    background: linear-gradient(blue , black);
 }
 
 
