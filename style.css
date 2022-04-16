@@ -553,6 +553,7 @@ form > input[type="submit"]:hover{
     }
     #png{
         width: 400%;
-        left: -200%;
+        left: -210%;
+        bottom: -20%;
     }
 }
