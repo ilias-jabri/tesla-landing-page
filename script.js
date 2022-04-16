@@ -61,20 +61,20 @@ window.onscroll = function myFunction() {
     if (document.documentElement.scrollTop > 300) {
       document.querySelector("#intro").className = 'visible-section';
     }
-    if (document.documentElement.scrollTop > 800) {
+    if (document.documentElement.scrollTop > 900) {
+        document.querySelector('#show-case-section').className = 'visible-section';
+    }
+    if (document.documentElement.scrollTop > 1300) {
         document.querySelector("#interior-section").className = 'visible-section';
     }
-    if (document.documentElement.scrollTop > 1700) {
+    if (document.documentElement.scrollTop > 2000) {
+        document.querySelector('#speed-specs').style.opacity = '1';
+    }
+    if (document.documentElement.scrollTop > 2300) {
         document.querySelector("#speed-section").className = 'visible-section';
         const speedScene = document.querySelector('#speed-scene');
         speedScene.style.width = '600px';
     } 
-    if (document.documentElement.scrollTop > 2000) {
-        document.querySelector('#speed-specs').style.opacity = '1';
-    }
-    if (document.documentElement.scrollTop > 2500) {
-        document.querySelector('#show-case-section').className = 'visible-section';
-    }
     if (document.documentElement.scrollTop > 3000) {
         document.querySelector('#order-section').className = 'visible-section';
         document.querySelector('#order-section').className = 'visible-section';
