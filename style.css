@@ -336,7 +336,7 @@ iframe{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 0px;
 }
 #car-value-container > #value > *{
     margin: 0px 6px;
