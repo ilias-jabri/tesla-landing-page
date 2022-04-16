@@ -509,7 +509,8 @@ form > input[type="submit"]:hover{
     color: rgb(255, 255, 255);
     }
     #discover-btn{
-        display:none;
+        top: auto;
+        bottom: 5%;
     }
     #nav-bar{
         position: absolute;
@@ -544,7 +545,11 @@ form > input[type="submit"]:hover{
         font-weight: 500;
     }
     #phrase > span{
-        color: red;
+        color: rgb(200, 15, 43);
+    }
+    #specs{
+        bottom: auto;
+        top: 7%;
     }
     #background-img{
         content: url("./assets/black\ wallpaper.jpg");
