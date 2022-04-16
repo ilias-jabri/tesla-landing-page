@@ -320,9 +320,8 @@ iframe{
     height: 100vh;
 }
 #order-section #section-title{
-    position: absolute;
-    top: 0%;
-    left: calc(50% - 230px);
+    font-size: 0.8em;
+    text-align: center;
 }
 #car-value-container{
     display: flex;
@@ -513,7 +512,17 @@ form > input[type="submit"]:hover{
         display:none;
     }
     #nav-bar{
+        position: absolute;
         display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+        background: linear-gradient(rgb(0, 0, 0),black, rgba(0, 0, 0, 0));
+        padding: 100px 50px;
+        height: 500px;
+        width: 100px;
+        right: 0%;
     }
     #interior-section > #wrapper{
         gap:0px;
@@ -528,14 +537,22 @@ form > input[type="submit"]:hover{
         background-color: red;
         height: 100vh;
     }
-    #background-img{
-        content: url("./plaid2222.jpg");
-        height: 100%;
+    #phrase{
+        color: white;
         width: 100%;
+        font-size: 100px;
+        font-weight: 500;
+    }
+    #phrase > span{
+        color: red;
+    }
+    #background-img{
+        content: url("./assets/black\ wallpaper.jpg");
+        height: 100vh;
+        width: 100vw;
     }
     #png{
         width: 400%;
         left: -200%;
     }
-
 }
