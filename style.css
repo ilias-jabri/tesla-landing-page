@@ -268,6 +268,7 @@ iframe{
     max-width: 1000px;
 }
 #show-case-section{
+    padding-top: 0px;
     padding-bottom: 0px;
     position: relative;
     gap: 10px;
@@ -312,10 +313,16 @@ iframe{
 }
 #order-section{
     padding: 0;
+    padding-top: 100px;
     position: relative;
     transform: translate(0, 0); 
     box-shadow: 0px -30px 50px rgba(0, 0, 0, 0.203);
     height: 100vh;
+}
+#order-section #section-title{
+    position: absolute;
+    top: 0%;
+    left: calc(50% - 230px);
 }
 #car-value-container{
     display: flex;
@@ -368,8 +375,13 @@ iframe{
 #the-car > img{
     display: none;
 }
+.saperator-line{
+    background-color: rgb(207, 207, 207);
+    height: 3px;
+    width: 100%;
+}
 #order-section #config{
-    font-size: 0.7em;
+    font-size: 0.6em;
     overflow: auto;
     display: flex;
     flex-direction: column;
@@ -412,11 +424,11 @@ iframe{
     justify-content: center;
     align-items: center;
     height: 60px;
-    gap: 10px;
+    gap: 7px;
 }
 .car-color{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background-color: rgb(255, 0, 0);
     border-radius: 50%;
 }
