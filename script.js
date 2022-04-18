@@ -22,7 +22,7 @@ function delay(timeInMs){
 }, timeInMs);
 }
 
-delay(1000);
+delay(2000);
 
 window.onscroll = function myFunction() {
     if (document.documentElement.scrollTop > 300) {
