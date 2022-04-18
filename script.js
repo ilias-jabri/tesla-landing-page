@@ -52,6 +52,9 @@ setTimeout(() => {
     //landscape.style.display = 'none';
     document.querySelector('#header').style.display = 'block';
     document.querySelector('main').style.display = 'block';
+    setTimeout(() => {
+        document.getElementById('disclaimer-alert').style.opacity = '1';
+    }, 1000);
 
 }, 4500);
 makeAction();
@@ -178,6 +181,10 @@ function onResizeWindow(){
             document.querySelector('#header > nav').style.display = 'none';
         }
     }
+}
+function clearBtn(){
+    let disclaimer = document.getElementById('disclaimer-alert');
+    document.body.removeChild(disclaimer);
 }
 onResizeWindow();
 autoPilot();

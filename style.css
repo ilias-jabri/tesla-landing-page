@@ -9,6 +9,35 @@ body{
     flex-direction: column;
     margin: 0px;
 }
+#disclaimer-alert{
+    transition: 0.5s;
+    opacity: 0;
+    height: 60px;
+    width: 100%;
+    background-color: rgb(233, 57, 22);
+    position: fixed;
+    top:calc(0% + 40px);
+    left: 0%;
+    z-index: 10;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#disclaimer-alert > #clear-btn{
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(255, 76, 76);
+}
+#disclaimer-alert > #clear-btn:hover{
+    background-color: red;
+    cursor: pointer;
+}
 #burger-btn{
     display: none;
     position: absolute;
