@@ -115,7 +115,7 @@ img{
     margin: 0px;
     width: calc(100%);
 }
-.invisible-section{
+/* .invisible-section{
     transition:0.5s;
     opacity: 0;
     font-size: 1.7em;
@@ -131,7 +131,7 @@ img{
     height: auto;
     min-height: 500px;
     transform: translate(0px, 120px);
-}
+} */
 .invisible-section{
     opacity: 0;
     transform: translate(0px, 120px);
@@ -277,16 +277,17 @@ iframe{
     font-size: 0.8em;
     line-height: 25px;
 }
-#show-case-section > #container{
-    position: relative;
-    min-width: 600px;
-    max-width: 1000px;
-}
 #show-case-section{
+    box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.346);
     padding-top: 0px;
     padding-bottom: 0px;
     position: relative;
     gap: 10px;
+}
+#show-case-section > #container{
+    position: relative;
+    min-width: 600px;
+    max-width: 1000px;
 }
 #show-case-section > * {
     max-width: 85%;
@@ -385,6 +386,7 @@ iframe{
     overflow: hidden;
     height: auto;
     max-width: 700px;
+    max-height: 300px;
 }
 #the-car > img{
     display: none;
@@ -499,9 +501,6 @@ form > input[type="submit"]:hover{
     justify-content: center;
     align-items: center;
 }
-
-
-
 @media(min-width: 2000px){
     #image-clip{
         display: flex;
@@ -541,7 +540,7 @@ form > input[type="submit"]:hover{
         right: 0%;
     }
     #interior-section > #wrapper{
-        gap:0px;
+        gap: 0px;
     }
     .invisible-section{
         padding-bottom: 60px;

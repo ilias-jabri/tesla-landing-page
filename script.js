@@ -61,10 +61,10 @@ window.onscroll = function myFunction() {
     if (document.documentElement.scrollTop > 300) {
       document.querySelector("#intro").className = 'visible-section';
     }
-    if (document.documentElement.scrollTop > 900) {
+    if (document.documentElement.scrollTop > 1000) {
         document.querySelector('#show-case-section').className = 'visible-section';
     }
-    if (document.documentElement.scrollTop > 1300) {
+    if (document.documentElement.scrollTop > 1600) {
         document.querySelector("#interior-section").className = 'visible-section';
     }
     if (document.documentElement.scrollTop > 2000) {
