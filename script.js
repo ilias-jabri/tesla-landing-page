@@ -131,8 +131,14 @@ function burgerBtn(btn){
         section.style.display = 'flex';
         btn.childNodes[1].innerText = 'clear';
         btn.dataset.clicked = '1';
+        setTimeout(() => {
+            section.style.right = '0px';
+        }, 200);
     }else{
-        section.style.display = 'none';
+        setTimeout(() => {
+            section.style.display = 'none';
+        }, 100);
+        section.style.right = '-300px';
         btn.childNodes[1].innerText = 'menu';
         btn.dataset.clicked = '0';
     }
@@ -142,7 +148,7 @@ function onResizeWindow(){
         if (window.innerWidth > 500) {
             document.querySelector('#header > nav').style.display = 'flex';
         }else{
-            document.querySelector('#header > nav').style.display = 'none';
+            document.querySelector('#header > #nav-bar').style.display = 'none';
         }
     }
 }
