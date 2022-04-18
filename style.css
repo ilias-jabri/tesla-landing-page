@@ -75,15 +75,30 @@ body{
 }
 #specs{
     position: absolute;
+    left: 50%;
+    transform: translate(-50%);
     display: flex;
-    justify-content: center;
-    gap: 100px;
-    width: 100%;
-    bottom: 10%;
-    font-size: 1.5em;
+    justify-content: space-around;
+    width: 80%;
+    bottom: 11%;
+    font-size: 1em;
     font-weight: 100;
     color: rgb(255, 255, 255);
 }
+
+@media(max-width: 800px){
+    #phrase{
+        font-size: 2em;
+    }
+    #specs{
+        bottom: 16%;
+    }
+    #specs h1{
+        font-size: 1em;
+    }
+
+}
+
 #specs h1{
     transition: 0.5s;
     opacity: 0;
