@@ -2,8 +2,11 @@ function delay(timeInMs){
     setTimeout(() => {
         const landscape = document.querySelector('#landscape');
     landscape.style.opacity = '0';
-    setTimeout(()=>landscape.style.display = 'none', 400)
-    setTimeout(()=>document.getElementById('png').style.transform = 'translate(0px)', 0)
+    setTimeout(()=>{
+        landscape.style.display = 'none'
+        document.body.style.backgroundColor = 'white';
+    }, 400)
+    setTimeout(()=>document.getElementById('png').style.transform = 'translate(0px)', 400)
     setTimeout(()=>{
         const elements = document.querySelectorAll('#specs h1');
         let len = elements.length;
