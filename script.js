@@ -83,6 +83,7 @@ window.onscroll = function myFunction() {
 
     }
 }
+
 const speedSection = document.getElementById('speed-section');
 speedSection.onscroll = function(){
     alert('its working');
@@ -163,6 +164,11 @@ function autoPilot(){
     }
     autoPilot.onclick = function(){
         autoPilot.style.display = 'none';
+    }
+}
+function burgerBtn(btn){
+    if (btn.style.display == 'none' && window.innerWidth < 500) {
+        document.querySelector('#header > nav').style.display = 'inline-block';
     }
 }
 autoPilot();

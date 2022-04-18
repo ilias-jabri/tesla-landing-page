@@ -9,6 +9,18 @@ body{
     flex-direction: column;
     margin: 0px;
 }
+#burger-btn{
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+#burger-btn > span{    
+    font-size: 35px;
+}
 #png{
     transition: 0.5s;
     transform: translate(-400px);
@@ -508,6 +520,9 @@ form > input[type="submit"]:hover{
     }
 }
 @media(max-width: 450px){
+    #burger-btn{
+        display: inline-block;
+    }
     #phrase{
         font-size: 1.2em;
     }
