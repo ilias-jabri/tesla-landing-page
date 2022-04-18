@@ -84,24 +84,16 @@ window.onscroll = function myFunction() {
     }
 }
 
-const speedSection = document.getElementById('speed-section');
-speedSection.onscroll = function(){
-    alert('its working');
-    console.log('working');
-}
-
 let showCaseClickTracker = 0;
 function showCaseClickButton(increment){
     let imgs = 6;
     showCaseClickTracker += increment;
     if(showCaseClickTracker < 0) {
         showCaseClickTracker = 0;
-        console.log('faaalse');
         return
     };
     if (showCaseClickTracker >= imgs) {
         showCaseClickTracker = imgs-1
-        console.log('faaalse');
         return
     }
     const gallery = document.querySelectorAll('#imgs-views > *');
