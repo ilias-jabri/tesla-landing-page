@@ -22,7 +22,7 @@ function delay(timeInMs){
 }, timeInMs);
 }
 
-delay(2000);
+delay(1000);
 
 window.onscroll = function myFunction() {
     if (document.documentElement.scrollTop > 300) {
@@ -75,12 +75,18 @@ function pickCarColors(){
             const hue = color.classList.value.replace('car-color ','');
             imgs.forEach(img =>{
                 img.style.display = 'none';
+                img.style.transition = '0.5s';
+                img.style.opacity = '0';
             });
             document.querySelector(`img[src="./assets/${hue} option.png"]`).style.display = 'inline-block';
+            setTimeout(()=>{
+                document.querySelector(`img[src="./assets/${hue} option.png"]`).style.opacity = '1';
+            },0)
             document.getElementById('chosen-car-color').style.backgroundColor = hue;
         }
     })
 }
+
 function pickInteriorColor(){
     const colors = document.querySelectorAll('#interior .car-color');
     const imgs = document.querySelectorAll('#the-car > *');
@@ -89,9 +95,14 @@ function pickInteriorColor(){
         const hue = color.classList.value.replace('car-color ','');
         imgs.forEach(img =>{
             img.style.display = 'none';
+            img.style.transition = '0.5s';
+            img.style.opacity = '0';
         });
         const theImg = document.querySelector(`img[src="./assets/${hue} tesla interior.png"]`);
         theImg.style = 'display: inline-block;';
+        setTimeout(()=>{
+            theImg.style.opacity = '1';
+        },100)
         document.getElementById('chosen-interior-color').style.backgroundColor = hue;
     }
     })
