@@ -521,6 +521,7 @@ form > input[type="submit"]:hover{
 }
 @media(max-width: 450px){
     #burger-btn{
+        z-index: 11;
         display: inline-block;
     }
     #phrase{
@@ -547,12 +548,12 @@ form > input[type="submit"]:hover{
         flex-direction: column;
         align-items: center;
         justify-content: start;
-        gap: 10px;
+        gap: 40px;
         background: linear-gradient(rgb(0, 0, 0),black, rgba(0, 0, 0, 0));
         padding: 100px 50px;
         height: 500px;
         width: 100px;
-        right: 0%;
+        right: -1px;
     }
     #interior-section > #wrapper{
         gap: 0px;

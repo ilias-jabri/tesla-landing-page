@@ -167,10 +167,27 @@ function autoPilot(){
     }
 }
 function burgerBtn(btn){
-    if (btn.style.display == 'none' && window.innerWidth < 500) {
-        document.querySelector('#header > nav').style.display = 'inline-block';
+    const section = document.querySelector('#header > nav');
+    if (btn.dataset.clicked == '0') {
+        section.style.display = 'flex';
+        btn.childNodes[1].innerText = 'clear';
+        btn.dataset.clicked = '1';
+    }else{
+        section.style.display = 'none';
+        btn.childNodes[1].innerText = 'menu';
+        btn.dataset.clicked = '0';
     }
 }
+function onResizeWindow(){
+    window.onresize = function(){
+        if (window.innerWidth > 500) {
+            document.querySelector('#header > nav').style.display = 'flex';
+        }else{
+            document.querySelector('#header > nav').style.display = 'none';
+        }
+    }
+}
+onResizeWindow();
 autoPilot();
 pickCarColors();
 pickInteriorColor();
